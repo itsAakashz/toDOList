@@ -1,5 +1,5 @@
 To-Do List Application
-<img src="https://i.imgur.com/6cG99yZ.png" alt="To-Do List App Screenshot" width="50%" align="right">
+<!-- <img src="https://i.imgur.com/6cG99yZ.png" alt="To-Do List App Screenshot" width="50%" align="right"> -->
 This is a simple to-do list application built with HTML, CSS, and JavaScript.
 
 🎨 Add new to-dos
