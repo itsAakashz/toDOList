@@ -1,49 +1,58 @@
 /* style.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #ffffff;
+    width: 90%;
+    max-width: 400px; /* Limit max width for responsiveness */
     padding: 20px;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Modern shadow effect */
 }
 
 h1 {
     margin-top: 0;
+    margin-bottom: 20px;
     text-align: center;
+    color: #333; /* Dark text color for better contrast */
 }
 
 form {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 input {
-    flex-grow: 1;
+    flex-grow: 1; /* Expand input field to fill available space */
     padding: 10px;
     border-radius: 4px;
-    border: 1px solid #ccc;
-    margin-right: 10px;
+    border: 1px solid #ccc; /* Subtle border */
+    margin-right: 10px; /* Space between input and button */
+    font-size: 16px; /* Large font for readability */
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
+    padding: 10px 15px; /* Button padding */
+    background-color: #007bff; /* Modern blue color */
+    color: #fff; /* White text for contrast */
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px; /* Large font for readability */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 ul {
@@ -52,22 +61,54 @@ ul {
 }
 
 li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee; /* Subtle border between items */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+li:last-child {
+    border-bottom: none; /* Remove bottom border on last item */
+}
+
+li .task {
+    flex-grow: 1; /* Expand task to fill available space */
+    font-size: 16px; /* Large font for readability */
+}
+
 button.remove {
-    background-color: #dc3545;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
+    padding: 8px 10px; /* Smaller padding for remove button */
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: #fff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 14px; /* Smaller font size */
+    transition: background-color 0.2s ease-in-out;
 }
 
 button.remove:hover {
-    background-color: #c82333;
+    background-color: #c82333; /* Darker red on hover */
+}
+
+@media (max-width: 480px) {
+    /* Responsive styles for mobile devices */
+    input {
+        flex-grow: 1;
+        margin-right: 5px; /* Reduce space between input and button */
+    }
+
+    button {
+        padding: 8px 10px; /* Smaller padding for button */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    li {
+        padding: 5px 0; /* Smaller padding between list items */
+    }
+
+    li .task {
+        font-size: 14px; /* Smaller font size for task text */
+    }
 }
