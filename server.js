@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 
 // Create an Express app
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 80
 
 // Connect to MongoDB Cloud Atlas using the connection string
 const mongoDBUri =
