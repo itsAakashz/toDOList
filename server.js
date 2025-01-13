@@ -9,7 +9,7 @@ const port = process.env.PORT || 80
 
 // Connect to MongoDB Cloud Atlas using the connection string
 const mongoDBUri =
-  "mongodb+srv://itsAakashz:qwertyuiop@cluster0.htrcpwp.mongodb.net/"; // Replace with your Cloud Atlas URL
+  "mongodb+srv://itsAakashz:zatrop@cluster0.htrcpwp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"; // Replace with your Cloud Atlas URL
 
 mongoose.connect(mongoDBUri, {
   useNewUrlParser: true,
